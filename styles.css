@@ -97,6 +97,10 @@ body {
     font-weight: bold;
 }
 
+.username {
+    font-weight: 300;
+}
+
 .name {
     font-weight: bold;
 }
@@ -122,10 +126,39 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
+    margin-bottom: 30px;
 }
 
 .picture-container img {
     width: 100%;
     object-fit: cover;
     object-position: center center;
+}
+
+/* FOOTER */
+.footer {
+    width: 90%;
+    font-size: .75em;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section2 a {
+    margin: 0 10px;
+}
+
+.footer a {
+    color: #8E8E8E;
+    text-decoration: none;
 }
