@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #FAFAFA;
+}
+
+/* Cabecera */
+
+.header {
+    background: #fff;
+    height: 54px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+.header-container {
+    max-width: 975px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 54px;
+}
+
+.header-container div {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+.search input {
+    width: 215px;
+    padding: 4px 7px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.nav {
+    justify-content: space-evenly;
+    font-size: 1.3em;
+}
+
+.nav i {
+    cursor: pointer;
+}
+
+/* Contenido */
+.content {
+    max-width: 975px;
+    margin: auto;
+}
+
+.user-information {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 185px;
+}
+
+.profile-image {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.profile-image img{
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 100px;
+    
+}
+
+.user-data i {
+    font-size: 1.3em;
+}
+
+.user-data a {
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.user-data span span {
+    font-weight: bold;
+}
+
+.name {
+    font-weight: bold;
+}
+
+/*  pictures */
+
+.pictures-sections {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.section-container {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.picture-container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
